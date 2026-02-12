@@ -7,7 +7,7 @@ public class Carro {
     //Métodos
     public void exibirInformacoes(){
         System.out.println("Modelo do Carro: " + modelo +
-                "\nMarca R$: " + marca +
+                "\nMarca: " + marca +
                 "\nAno: " + ano +
                 "\n");
     }
