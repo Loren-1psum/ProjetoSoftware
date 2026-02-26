@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Aula 01/Aula 01.iml" filepath="$PROJECT_DIR$/Aula 01/Aula 01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula 3 - Metodos POO/Aula 3 - Metodos POO.iml" filepath="$PROJECT_DIR$/Aula 3 - Metodos POO/Aula 3 - Metodos POO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula 02 - Orientacao de Objetos/DesafioCarro/DesafioCarro.iml" filepath="$PROJECT_DIR$/Aula 02 - Orientacao de Objetos/DesafioCarro/DesafioCarro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Aula 02 - Orientacao de Objetos/OrientacaoObjetos/OrientacaoObjetos.iml" filepath="$PROJECT_DIR$/Aula 02 - Orientacao de Objetos/OrientacaoObjetos/OrientacaoObjetos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ProjetoSoftware.iml" filepath="$PROJECT_DIR$/.idea/ProjetoSoftware.iml" />
+    </modules>
+  </component>
+</project>
