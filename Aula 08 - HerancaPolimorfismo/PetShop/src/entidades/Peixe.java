@@ -9,6 +9,11 @@ public class Peixe extends Animal{
         this.especie = especie;
     }
 
+    public Peixe(String nome, String especie) {
+        super(nome);
+        this.especie = especie;
+    }
+
     //Getters & Setters
 
     public String getEspecie() {
@@ -17,5 +22,12 @@ public class Peixe extends Animal{
 
     public void setEspecie(String especie) {
         this.especie = especie;
+    }
+
+    @Override
+    public String toString() {
+        return "Peixe{" + super.toString() +
+                ", especie='" + especie + '\'' +
+                '}';
     }
 }

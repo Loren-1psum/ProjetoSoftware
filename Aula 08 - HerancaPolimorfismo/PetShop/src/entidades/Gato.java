@@ -9,6 +9,11 @@ public class Gato extends Animal{
         this.cor = cor;
     }
 
+    public Gato(String nome, String cor){
+        super(nome);
+        this.cor = cor;
+    }
+
     //Getters & Setters
 
     public String getCor() {
@@ -17,5 +22,12 @@ public class Gato extends Animal{
 
     public void setCor(String cor) {
         this.cor = cor;
+    }
+
+    @Override
+    public String toString() {
+        return "Gato{" + super.toString() +
+                ", cor='" + cor + '\'' +
+                '}';
     }
 }

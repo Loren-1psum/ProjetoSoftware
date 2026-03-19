@@ -1,6 +1,6 @@
 package entidades;
 
-public class Animal {
+public abstract class Animal {
     private String nome;
     private int idade;
     private double peso;
@@ -10,6 +10,10 @@ public class Animal {
         this.nome = nome;
         this.idade = idade;
         this.peso = peso;
+    }
+
+    public Animal(String nome) {
+        this.nome = nome;
     }
 
     //Getters e Setters
@@ -35,5 +39,12 @@ public class Animal {
 
     public void setPeso(double peso) {
         this.peso = peso;
+    }
+
+    @Override
+    public String toString() {
+        return "nome='" + nome +
+                ", idade=" + idade +
+                ", peso=" + peso;
     }
 }

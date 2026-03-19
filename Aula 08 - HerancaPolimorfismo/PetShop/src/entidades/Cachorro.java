@@ -9,6 +9,11 @@ public class Cachorro extends Animal{
         this.raca = raca;
     }
 
+    public Cachorro(String nome, String raca) {
+        super(nome);
+        this.raca = raca;
+    }
+
     //Getters & Setters
 
     public String getRaca() {
@@ -17,5 +22,12 @@ public class Cachorro extends Animal{
 
     public void setRaca(String raca) {
         this.raca = raca;
+    }
+
+    @Override
+    public String toString() {
+        return "Cachorro{" + super.toString() +
+                ", raca='" + raca + '\'' +
+                '}';
     }
 }
