@@ -5,7 +5,7 @@ public class Produto {
     private double nota1;
     private double nota2;
 
-    public Aluno(String nome, double nota1, double nota2) {
+    public Produto(String nome, double nota1, double nota2) {
         this.nome = nome;
         this.nota1 = nota1;
         this.nota2 = nota2;
@@ -23,14 +23,14 @@ public class Produto {
         this.nota2 = nota2;
     }
 
-    public double mediaAluno(){
+    public double mediaProduto(){
         return (this.nota1 + this.nota2)/2;
     }
 
-    public String statusAluno(){
-        if(mediaAluno() >= 7){
+    public String statusProduto(){
+        if(mediaProduto() >= 7){
             return "Aprovado";
-        }else if(mediaAluno() >= 5){
+        }else if(mediaProduto() >= 5){
             return "Exame!";
         }else{
             return "Reprovado";
@@ -39,7 +39,7 @@ public class Produto {
 
     @Override
     public String toString() {
-        return " | " + nome + " | " + nota1 + " | " + nota2 + " | " + mediaAluno() + " | " + statusAluno() + " | ";
+        return " | " + nome + " | " + nota1 + " | " + nota2 + " | " + mediaProduto() + " | " + statusProduto() + " | ";
     }
 
 }
