@@ -1,7 +1,7 @@
 import entidades.Produto;
 import entidades.GerenciarLoja;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -27,14 +27,14 @@ public class Main {
                     String nome = sc.nextLine();
 
                     System.out.print("Digite a nota do produto: ");
-                    double nota1 = sc.nextDouble();
+                    double preco = sc.nextDouble();
                     sc.nextLine();
 
                     System.out.print("Digite a nota do produto: ");
-                    double nota2 = sc.nextDouble();
+                    int quantidade = sc.nextInt();
                     sc.nextLine();
 
-                    Produto produto =new Produto(nome, nota1, nota2);
+                    Produto produto =new Produto(nome, preco, quantidade);
                     lista.adicionarProduto(produto);
                 }
                 case "2" -> {
@@ -50,14 +50,14 @@ public class Main {
                     String nome = sc.nextLine();
 
                     System.out.print("Digite a nota do produto: ");
-                    double nota1 = sc.nextDouble();
+                    double preco = sc.nextDouble();
                     sc.nextLine();
 
                     System.out.print("Digite a nota do produto: ");
-                    double nota2 = sc.nextDouble();
+                    int quantidade = sc.nextInt();
                     sc.nextLine();
 
-                    lista.alteraInformacoesProduto(idProduto, nome, nota1, nota2);
+                    lista.alteraInformacoesProduto(idProduto, nome, preco, quantidade);
                 }
                 case "4" -> {
                     lista.listarProdutos();

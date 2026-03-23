@@ -15,20 +15,20 @@ public class GerenciarLoja {
         if (listaProdutos.isEmpty()){
             System.out.println("Nenhum produto encontrado!");
         } else{
-            System.out.println("| ID | NOME | NOTA1 | NOTA2 | MÉDIA | SITUAÇÃO |");
+            System.out.println("| ID | NOME | PREÇO | QUANTIDADE |");
             for (int i=0; i<listaProdutos.size(); i++) {
                 System.out.println("|" + i + listaProdutos.get(i));
             }
         }
     }
 
-    public void alteraInformacoesProduto(int idProduto, String nome, double nota1, double nota2) {
+    public void alteraInformacoesProduto(int idProduto, String nome, double preco, int quantidade) {
 
         Produto produto = listaProdutos.get(idProduto);
 
         produto.setNome(nome);
-        produto.setNota1(nota1);
-        produto.setNota2(nota2);
+        produto.setPreco(preco);
+        produto.setQuantidade(quantidade);
 
         System.out.println("Produto alteraco com sucesso!");
     }

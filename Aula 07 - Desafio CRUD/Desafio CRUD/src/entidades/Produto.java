@@ -5,17 +5,13 @@ public class Produto {
     private double preco;
     private int quantidade;
 
-<<<<<<< Updated upstream
     public Produto(String nome, double preco, int quantidade) {
-=======
-    public Produto(String nome, double nota1, double nota2) {
->>>>>>> Stashed changes
         this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
     }
 
-    public void setNomeString nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
@@ -23,7 +19,7 @@ public class Produto {
         this.preco = preco;
     }
 
-    public void setQuantidade(double quantidade) {
+    public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
 
@@ -31,4 +27,5 @@ public class Produto {
     public String toString() {
         return " | " + nome + " | " + preco + " | " + quantidade + " | ";
     }
+
 }
