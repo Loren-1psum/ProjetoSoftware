@@ -1,3 +1,4 @@
+import entidades.Produto;
 import entidades.gerenciarLoja;
 
 import java.util.Scanner;

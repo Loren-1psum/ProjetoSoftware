@@ -2,32 +2,44 @@ package entidades;
 
 public class Produto {
     private String nome;
-    private String cor;
-    private String quantidade;
-    private double preco;
+    private double nota1;
+    private double nota2;
 
-    public Produto(String nome, String cor, String quantidade, double preco) {
+    public Aluno(String nome, double nota1, double nota2) {
         this.nome = nome;
-        this.cor = cor;
-        this.quantidade = quantidade;
-        this.preco = preco;
+        this.nota1 = nota1;
+        this.nota2 = nota2;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public void setCor(String cor) {
-        this.cor = cor;
+    public void setNota1(double nota1) {
+        this.nota1 = nota1;
     }
 
-    public void setQuantidade(String quantidade) {
-        this.quantidade = quantidade;
+    public void setNota2(double nota2) {
+        this.nota2 = nota2;
     }
 
-    public void setPreco(double preco) {
-        this.preco = preco;
+    public double mediaAluno(){
+        return (this.nota1 + this.nota2)/2;
     }
+
+    public String statusAluno(){
+        if(mediaAluno() >= 7){
+            return "Aprovado";
+        }else if(mediaAluno() >= 5){
+            return "Exame!";
+        }else{
+            return "Reprovado";
+        }
+    }
+
+    @Override
+    public String toString() {
+        return " | " + nome + " | " + nota1 + " | " + nota2 + " | " + mediaAluno() + " | " + statusAluno() + " | ";
+    }
+
 }
-
-
