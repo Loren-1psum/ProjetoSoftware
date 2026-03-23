@@ -5,7 +5,11 @@ public class Produto {
     private double preco;
     private int quantidade;
 
+<<<<<<< Updated upstream
     public Produto(String nome, double preco, int quantidade) {
+=======
+    public Produto(String nome, double nota1, double nota2) {
+>>>>>>> Stashed changes
         this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
