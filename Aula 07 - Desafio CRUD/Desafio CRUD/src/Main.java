@@ -46,14 +46,14 @@ public class Main {
                     int idProduto = sc.nextInt();
                     sc.nextLine();
 
-                    System.out.print("Digite o nome do produto: ");
+                    System.out.print("Digite o Nome do produto: ");
                     String nome = sc.nextLine();
 
-                    System.out.print("Digite a nota do produto: ");
+                    System.out.print("Digite o Preço do produto: ");
                     double preco = sc.nextDouble();
                     sc.nextLine();
 
-                    System.out.print("Digite a nota do produto: ");
+                    System.out.print("Digite a Quantidade do produto: ");
                     int quantidade = sc.nextInt();
                     sc.nextLine();
 
