@@ -11,7 +11,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         while (true){
-
             System.out.println("SISTEMA CRUD DE PRODUTOS");
             System.out.println("1- Cadastrar Produtos");
             System.out.println("2- Listar Produtos");
@@ -20,7 +19,6 @@ public class Main {
             System.out.println("5- Sair");
             System.out.println("Digite uma opção: ");
             String opcao = sc.nextLine();
-
             switch (opcao){
                 case "1" -> {
                     System.out.print("Digite o Nome do produto: ");

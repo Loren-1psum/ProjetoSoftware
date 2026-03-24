@@ -3,7 +3,7 @@ package entidades;
 import java.util.ArrayList;
 
 public class GerenciarLoja {
-    private ArrayList<Produto> listaProdutos = new ArrayList<>();
+    private final ArrayList<Produto> listaProdutos = new ArrayList<>();
 
     //Create
     public void adicionarProduto(Produto produto){
