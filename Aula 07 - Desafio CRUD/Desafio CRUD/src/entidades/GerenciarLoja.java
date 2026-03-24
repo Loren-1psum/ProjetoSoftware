@@ -15,7 +15,7 @@ public class GerenciarLoja {
         if (listaProdutos.isEmpty()){
             System.out.println("Nenhum produto encontrado!");
         } else{
-            System.out.println("| ID | NOME | PREÇO | QUANTIDADE |");
+            System.out.println("| ID | NOME | PREÇO | QUANTIDADE | VALOR EM ESTOQUE |");
             for (int i=0; i<listaProdutos.size(); i++) {
                 System.out.println("|" + i + listaProdutos.get(i));
             }

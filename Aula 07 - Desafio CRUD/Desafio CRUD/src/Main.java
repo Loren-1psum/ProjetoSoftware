@@ -34,7 +34,7 @@ public class Main {
                     int quantidade = sc.nextInt();
                     sc.nextLine();
 
-                    Produto produto =new Produto(nome, preco, quantidade);
+                    Produto produto = new Produto(nome, preco, quantidade);
                     lista.adicionarProduto(produto);
                 }
                 case "2" -> {

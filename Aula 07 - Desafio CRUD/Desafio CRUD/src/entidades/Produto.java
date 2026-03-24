@@ -23,9 +23,13 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
+    public double calcularValorEstoque(){
+        return (this.preco * this.quantidade);
+    }
+
     @Override
     public String toString() {
-        return " | " + nome + " | " + preco + " | " + quantidade + " | ";
+        return " | " + nome + " | " + preco + " | " + quantidade + " | " + calcularValorEstoque() + " | ";
     }
 
 }
