@@ -1,7 +1,7 @@
 //Nome:Caio de Sousa Prieto Loren
 //RGM:11251101353
-//Nome:
-//RGM
+//Nome:Ryan Dias da Silva
+//RGM:11251104403
 
 import entidades.Produto;
 import entidades.GerenciarLoja;
