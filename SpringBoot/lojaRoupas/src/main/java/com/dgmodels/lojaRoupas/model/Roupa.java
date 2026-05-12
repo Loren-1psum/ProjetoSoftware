@@ -1,6 +1,8 @@
 package com.dgmodels.lojaRoupas.model;
 
 
+import com.dgmodels.lojaRoupas.dto.DadosAtualizarRoupa;
+import com.dgmodels.lojaRoupas.dto.DadosCadastroRoupa;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -29,11 +31,18 @@ public class Roupa {
     private int quantidade;
 
     public Roupa(DadosCadastroRoupa dados) {
-        this.nomeProduto = dados.marca();
+        this.nomeProduto = dados.nomeProduto();
         this.marca = dados.marca();
         this.tamanho = dados.tamanho();
         this.preco = dados.preco();
         this.quantidade = dados.quantidade();
     }
 
+    public void atualizarRoupa(DadosAtualizarRoupa novosDados) {
+        this.nomeProduto = novosDados.nomeProduto();
+        this.marca = novosDados.marca();
+        this.tamanho = novosDados.tamanho();
+        this.preco = novosDados.preco();
+        this.quantidade = novosDados.quantidade();
+    }
 }

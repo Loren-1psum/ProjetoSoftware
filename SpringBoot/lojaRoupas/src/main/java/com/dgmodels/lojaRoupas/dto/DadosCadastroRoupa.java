@@ -1,4 +1,6 @@
-package com.dgmodels.lojaRoupas.model;
+package com.dgmodels.lojaRoupas.dto;
+
+import com.dgmodels.lojaRoupas.model.Tamanho;
 
 public record DadosCadastroRoupa(
         String nomeProduto,
